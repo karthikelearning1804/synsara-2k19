@@ -1,0 +1,907 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <title>SYNSARA | 2K19</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <meta name="theme-color" content="#333333">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <link rel="apple-touch-icon" href="img/plogo2k15.png">
+        <link rel="shortcut icon" href="img/plogo2k15.png" type="image/x-icon" />
+        <!-- Place favicon.ico in the root directory -->
+
+<!-- <<<<<<< HEAD -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="css/skeleton.css" /> -->
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+
+<!-- ======= -->
+<!-- >>>>>>> origin/master -->
+<style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #ffffff;
+  /* background: url(https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif) center no-repeat #fff; */
+  /* background: url(https://media.giphy.com/media/UqxVRm1IaaIGk/giphy.gif) center no-repeat #fff; */
+  /* background: url(  https://media.giphy.com/media/4lZaiAxj6fjwI/giphy.gif) center no-repeat #fff; */
+}
+</style>
+<style>
+.loader {
+  left:50%;
+  top:50%;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #00ff00; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+    </head>
+    <body>
+      <!-- Countdown Section -->
+      <!-- <a target="_blank" href="https://github.com/leandrosimoes/ls-countdown" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#424242; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
+            aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a> -->
+    <style>
+        .github-corner svg {
+            z-index: 9999999;
+        }
+
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+
+        @keyframes octocat-wave {
+
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+    </style>
+      <!-- Loader Section -->
+        <script>
+            //paste this code under the head tag or in a separate js file.
+              // Wait for window load
+              $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");;
+              });
+            </script>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Preloader starts here !! xD -->
+         <!--<div class="se-pre-con"></div>--> 
+        <!-- <div class="loader"></div> -->
+
+
+        <!-- <div class="scroll-down"><img src="img/scroll-down.png" alt="scroll down" width="100%"/></div> -->
+
+        <header class="top-bar">
+          <div class="wrap960">
+            <div class="logo-box"><div class="logo"><a href="index.html"><p>SYNSARA</p></a></div></div>
+            <div class="menu-button"> </div>
+            <div class="nav-box">
+              <ul class="nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Events">Events</a></li>
+                <li><a href="#Register">Register</a></li>
+                <li><a href="#Team">Sponsors</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <!-- <div class="map-line"></div> -->
+        <div name="Home" class="home-slide">
+
+<figure class="pic-1 stretch">
+</figure>
+<figure class="pic-2 stretch">
+</figure>
+<figure class="pic-3 stretch">
+</figure>
+<figure class="pic-4 stretch"> 
+</figure>
+          <div class="overlay-pattern">
+            <div class="para-slide">
+              <div class="pre-para invisible">Hola!</div>
+                <div class="para" style="color:#00ff00" >SYN</div><div class="sara">SARA</div>
+                <div class="post-para">2k19
+                    <div>
+                        <main>
+                            <div id="countdown">
+                                <!-- <div class="countdown-item years">0</div> -->
+                                <div class="countdown-item days">0</div>
+                                <div class="countdown-item hours">0</div>
+                                <div class="countdown-item minutes">0</div>
+                                <div class="countdown-item seconds">0</div>
+                            </div>
+                        </main>
+                    </div>
+                </div>      
+            <!-- <br><br><br><br><br> -->
+        </div>
+        </div>
+        </div>
+        <div name="About" class="about-container" >
+          <div class="section-title">About Us<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
+          <div class="about-para">
+                <p >
+                  <h1><span>SynSara</span> is a National Technical Festival of <span>Sri Sairam Engineering College</span>,organized by the <span>Department of 
+                     Computer Science and Engineering</span>,<br>where extraordinary minds of various disciplines unite under one grand arena.
+                    <br>SynSara is now bigger and better with 600+ participants who get elated with intriguing events that are stacked up.
+                    We are here to walk the walk with grandeur and bag of wonders to leave you enthralled as you explore our jamboree of surprises. <br>
+                    Let the fandoms unite at our virtual kingdom.
+                     </h1>
+                     
+                </p>
+          </div>
+
+          <div class="main-logo-container">
+            <div class="main-logo">
+                <img src="img/plogo2k15.png" width="100%"/>
+            </div>
+          </div>
+          <div class="para-detail-container">
+            <div class="num-event">
+                <span>9</span><br>number of events
+            </div>
+            <div class="event-date">
+                <span>sept 19-20, 2019</span><br>event date
+            </div>
+            <div class="cash-prize">
+                <span>&#x20B9; 100000</span><br>cash prizes worth
+            </div>
+          </div>
+        </div> 
+        
+        <!-- <div class="map-line"></div> -->
+        <div name="Events" class="event-container">
+            
+            <div class="container">
+              <div class="section-title" style="color: rgb(0, 255, 0);">Events<p>&diams;&nbsp;&diams;&nbsp;&diams;</p><br></div>
+              <div class="row event_row">
+                <div class="four columns event_column event-list-1">
+                  <img src="img/Event Logos/HUMBLE.png" width="70%" />
+                  <div class="eventhover"><div class="humblefoolz"></div></div>
+                </div>
+                <div class="four columns event_column event-list-2">
+                  <img src="img/Event Logos/WEB.png" width="70%" />
+                  <div class="eventhover"><div class="webuiduo"></div></div>
+                </div>
+                <div class="four columns event_column event-list-3">
+                  <img src="img/Event Logos/INovate 2 (BUISNESS PLAN).png" width="70%" />
+                  <div class="eventhover"><div class="inovate"></div></div>
+                </div>
+              </div>
+              <div class="row event_row">
+                <div class="four columns event_column event-list-4">
+                    <img src="img/Event Logos/TRIC.png" width="70%" />
+                  <div class="eventhover"><div class="trickytrail"></div></div>
+                </div>
+                <div class="four columns event_column event-list-5">
+                    <img src="img/Event Logos/hakuna matata.png" width="70%" />
+                  <div class="eventhover"><div class="hakunaMatatata"></div></div>
+                </div>
+                <div class="four columns event_column event-list-6">
+                    <img src="img/Event Logos/CRI.png" width="70%" />
+                  <div class="eventhover"><div class="cricbidd"></div></div>
+                </div>
+              </div>
+              <div class="row event_row">
+                <div class="four columns event_column event-list-7">
+                    <img src="img/Event Logos/SURPRISE.png" width="70%" />
+                  <div class="eventhover"><div class="plus"></div></div>
+                </div>
+                <div class="four columns event_column event-list-8">
+                    <img src="img/Event Logos/PHO.png" width="70%" />
+                  <div class="eventhover"><div class="shuttersnap"></div></div>
+                </div>
+                <div class="four columns event_column event-list-9">
+                    <img src="img/Event Logos/EthicalHacking.png" width="70%" />
+                  <div class="eventhover"><div class="workshop"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        <div name="Event_Slider" class="event-content">
+
+          <div class="whole-event">
+        <!-- EVENT ONE -->
+                <div class="event event-active event-1">
+
+                  <div class="event-image"></div>
+                  <div class="instruct">
+                    <img class="ins-close" src="img/back-arrow-button.png" />
+
+                    <h1>#Humblefool<sup>2</sup></h1>
+
+                    <p>If you are a well-versed coding champ then this is the right place to set fire your interest.Show your fullest potential and walk through sequences of success at every stage.We have stacked up fun and chaos to meet your expectations.</p> 
+                    <h3>General rules:</h3>
+                    <ol>
+                      <li>Only two participants are allowed per team.</li>
+                      <li>This is an on-site event.<br/>
+                        <b>Note:</b> Based on the total entries of this event we might have an             online filtering round and will be disqualified if plagiarism is identified.</li>
+                      <li>Mobile phones are not allowed during the contest.</li>
+                      <li>Browsing over the Internet will not be permitted.</li>
+                    </ol>
+                    <h3>Event arena:</h3>
+                    <ol>
+                      <li>There will be 2 rounds,prelimnary level 1 with 10 MCQs and 5 programs (3 algorithms and 2 code completion).</li><li>The competition will be on hackerrank platform.</li>
+                      <li>All languages established on hackerrank are allowed.</li>
+                  </div>
+
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> &nbsp;  #Humblefool<sup>2</sup> </span>
+                      <div class="quotes">                <br />
+                        Mark your identity red with your code to inherit the trait of the humblefool!! 
+                        <br />                <br />DATE :- 20-09-19<br />                Level I  :10a.m. - 12noon  <br />    Level II : 1p.m. - 3p.m. <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">SANATH R <br /> </span><div class="ph"> Mobile : +91 7358404156</div></div>
+                      <div class="head"><span class="head-name">HEMA S <br /> </span><div class="ph"> E-Mail : seshis99@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT ONE ENDS   -->
+
+        <!-- EVENT TWO -->
+                <div class="event event-2">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+                      <h1>WEB UI DUO</h1>
+                      <p>Want to design a website which would help people in prioritizing and publicizing their ideas. Having the skillsets to make it look awesome to a worldwide level. Shoot your skills like the web of Spider-Man to prove how efficient you're in doing it.</p>
+                      <h3>Guidelines to be followed:</h3>
+                      <ol>
+                        <li>Come in as team of two.</li>
+                        <li> Attention will be paid to the quality of code and the quality of the website development process.</li>
+                        <li>The technical committee will provide a template, which describes the site development process.</li>
+                        <li>All entries to the contest must be created by the teams during the contest.</li>
+                        <li>The code should be presented in a structured format.</li>
+                        <li>No  internet will be provided for the second round.</li>
+                        <li>No hard or soft copy reference material such as HTML, CSS or JavaScript documentation will be permitted for use during the contest.</li>
+                        <li>All copyright laws are to be followed. </li>
+                        <li>Violations will result in disqualification.</li>
+                         <li>Decision made by the event coordinator will be final.</li>
+                      </ol>
+                      <h3>ROUNDS</h3>
+                      <p><b>Round I- Online test based on HTML , CSS and Javascript</b><p>
+                        <ul>
+                          <li>Contains 30 questions of MCQ type</li>
+                          <li>Time duration is 25 minutes.</li>
+                        </ul>
+                      <p><b>Round II – Hands on </b></p>
+                      <ul>
+                        <li>Only Javascript, CSS and HTML should be used</li>
+                        <li>No internet connection will be provided</li>
+                        <li>Images and other necessary details will be provided by the technical committee.</li>
+                        <li>Time duration is 60 minutes.</li>
+                      </ul>
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> WEB UI DUO</span>
+                      <div class="quotes">                <br />
+                       Unlocking knowledge at the speed of your imagination 
+                        <br />                <br />DATE :- 20-09-19<br />                Level I  :10a.m. - 12noon  <br />    Level II : 1p.m. - 3p.m. <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">KARTHIK N R <br /> </span><div class="ph">  Mobile : +91 7397264570</div></div>
+                      <div class="head"><span class="head-name">AISHWARYA S <br /> </span><div class="ph">  E-Mail : aishu150699@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT TWO ENDS   -->
+
+        <!-- EVENT THREE -->
+                <div class="event event-3">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+                        <h1>iNovate</h1>
+                        <p>The iNovate Business Plan competition is part of the SynSara’2k19 Annual Techfest and simulates an angel investor or venture capital pitch. Teams will present their business proposals to a panel of (business professionals and investors/judges) in a presentation format, with the strongest ideas and teams moving forward to compete for substantial cash prizes that could be used to further the commercialization of their inventions. </p>
+                        <p>Business Plan Competition students learn key business concepts and skills while developing a blueprint strategy to launch a new product or service. This competition helps young people build skills, unlock creativity, and discover pathways to opportunities in small and large businesses. This unique opportunity helps students get excited about the world of business and entrepreneurship and empowers them to use entrepreneurial thinking to create value, in their own companies or working for someone else.</p>
+                        <h3>Rounds:</h3>
+                        <ol>
+                          <li>Qualifying Round -Qualifying Round - Submissions consist of a presentation which has to be sent to <h3>inovate.synsara@gmail.com</h3> in the following format:
+                          <ul>
+                          <li>Subject: iNovate (Your Team_Name)<br></li>
+                        	<li>Body: Your Business plan as in the given presentation template. </li>
+                               <li>Presentation Template: <a href="https://drive.google.com/open?id=1NujSVBXQGSdqUJKwXSuqgm0p0jggdtrP">Click Here</a></li>
+                               <br />
+                               Note: The teams qualified in the qualifying round will appear for the final round. 
+                         </ul>       
+                          <li>Final Round - Powerpoint Presentation and Evaluation</li>
+                        </ol>
+                         <!--<h3>IMPORTANT DATES:</h3>-->
+                        <h3>Last date for registering & submission: 15th Sept 2019</h3>
+                          <!--<li>Each team should have a professional presentation limited to 4-7 slides.</li>-->
+                          
+                        <h3>Rules</h3>
+                        <ol><li>A team can consist of maximum of 4 members.</li>
+                          <!--<li>Each team should have a professional presentation limited to 4-7 slides.</li>-->
+                          <li>Presentations are limited to 10-15 minutes and will be followed by 5 minutes of Q&A by the judging panel. </li>
+                          <li>The selected business plans will be intimated through e-mail.</li>
+                          <h3>Note: Further details will be given in the same.So, kindly register to participate.</h3>
+                          <li>Though teams can choose their presenting person or persons, each student member should be present at the competition and be prepared to support their business plan.</li>
+                          <li>The selected teams must bring a Hard copy and the Soft copy of their presentations. Please bring your own pendrives for the Final Round.</li>
+                          <li>The Final Presentation should not exceed more than 30 slides.</li>
+                          <li>The Jury decision will be final and binding.</li>
+                        </ol>
+                       
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> &nbsp; iNovate </span>
+                      <div class="quotes">                <br />
+                       Business Without Boundaries.
+                        <br />                <br />DATE :- 20-09-19<br />                TIMING  :10a.m. - 3p.m  <br /> <!--   Level II : 1p.m. - 3p.m. <br />-->
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">PREM D <br /> </span><div class="ph">  Mobile : +91 9940160883</div></div>
+                      <div class="head"><span class="head-name">NISHA G MATHUR <br /> </span><div class="ph">  E-Mail : nishagmathur98@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT THREE ENDS   -->
+
+        <!-- EVENT FOUR -->
+                <div class="event event-4">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+
+                        <h1>TRICKY TRAIL</h1>
+
+                        <b>Event description :</b>
+                        <p>The cure for boredom is curiosity and there is no cure for curiosity.Query the guard of treasure for the key to view the dark zones on the console and set sail to relay on to chase your adventures.Leap ahead in the chaos to loot the transfixed excitement.</p>
+                        <h3>general rules:</h3>
+                        <ol>
+                          <li>Club yourself as a team of 2-3 members.</li>
+                          <li>The team members can belong to 2nd 3rd or 4th year from any department of the same college.</li>
+                          <li>Mobile phones are not allowed.</li>
+                          <li>One of your team members must know SQL. </li>
+                        </ol>
+                        <h3>Event arena:</h3>
+                        <ol>
+                          <li>Each team will be given 3 clues that tests your general knowledge and SQL mastery.</li>
+                          <li>All the team members will hunt for one common treasure.</li>
+                          <li>The team which finds the treasure first will be considered the winner.</li>
+                          <li>Decision made by the event coordinator will be final.</li>
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> TRICKY TRAIL </span>
+                      <div class="quotes">                <br />
+                        The chaotic island with the Pandora's box left under dark shade to explore!!
+                        <br />                <br />DATE :- 20-09-19<br />                Timings  :10:45a.m. - 2p.m.  <br />  <!--  Level II : 1p.m. - 2p.m. <br />-->
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">PRANAV P <br /> </span><div class="ph">  Mobile : +91 7358589758</div></div>
+                      <div class="head"><span class="head-name">KEERTHIBALA V <br /> </span><div class="ph">  E-Mail : vkeerthibala@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT FOUR ENDS   -->
+
+        <!-- EVENT FIVE -->
+                <div class="event event-5">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+                        <h1>HACK-UNA-MATATA</h1>
+                        <p>A rambunctious 24 hour event which is more ferocious than sher khan which would cause your neurons tingle, we challenge you to put your coding and development skills to test, show your wit like timon and perseverance like pumba to decode the bugs.</p>
+                        <h3>General instructions:</h3>
+                        <ol>
+                          <li>Team up in a group of minimum of 3 to maximum of 5 members.</li>
+                          <li>All members of a team should register for accommodation individually if needed.</li>
+                          <li>Based on the professional judgement top 25 teams will be shortlisted for the competition.</li>
+                          <li>The teams will be asked to implement their proposal with a few changes within the given timeframe.</li>
+                          <li>Students are asked to begin even the basic elementary steps of their project after the commencement of the hackathon.</li>
+                          <li>The Jury decision will be final and binding.</li>
+                        </ol>
+                        <h3>WE SUPPLY </h3>
+                        <p>Wi-Fi, Food, Accommodation(if needed) and caffeine to keep you going.<br/>
+<b>NOTE:</b> Technical assistance will be provided under our convenience.</p>
+<h3>YOU BRING</h3>
+<p>Your laptop and other necessary components , creativity, passion , skills and idea. Come with a collaborative mindset.</p>
+<h3>YOU GET</h3>
+<p>You can increase your network reach as professional and non-professional friendships are easily formed in the right environment.</p>
+<h3>So, lets quickly hit the register button!</h3>
+
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info ">
+                    <img class="info-close" src="img/x-button.png" />
+                    <!-- <div class="hakunaMatatata2"> -->
+                      <div class="desc">
+                      <span class="event_title"> HACK-UNA-MATATA </span>
+                      <div class="quotes">                <br />
+                        COME , BRAINSTORM, & CREATE VIABLE SOLUTIONS
+                        <br />                <br />EVENT DATES<br />                19-09-2019   <br />    20-09-2019  <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head_info"><span class="head-name"> <br /> </span><div class="inf">  E-Mail : hackathon.synsara@gmail.com</div></div>
+                     <!-- <div class="head"><span class="head-name">MAHESHWARI M <br /> </span><div class="ph">  E-Mail : Mahemurali0809@gmail.com</div></div>-->
+                      </div>
+                    </div>
+                    </div>
+                  <!-- </div> -->
+                </div>
+
+        <!-- EVENT FIVE ENDS   -->
+
+        <!-- EVENT SIX -->
+                <div class="event event-6">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+                        <h1>CRICBIDD</h1>
+                        <p>Ever thought what would you do if you got a chance to build your own cricket team.<br />
+                          <br />To use your knowledge of the ‘Big Game’ and your sixth sense to create the perfect team that goes on to lift the coveted Trophy.<br />
+                          <br />To use permutation and combination and make the best choice keeping in mind the huge investment that goes into putting together a winning team.<br />
+                          <br />To learn Strategizing, Resource management, Entrepreneurship, all at the same time in a fun-filled Cricketing event <br/>
+                           This September, grab the chance of building your very own cricket team.
+                        </p>
+
+                        <h3>RULES AND REGULATIONS:</h3>
+                        <ol>
+                          <li>Maximum 3 to 5 participants per team.</li>
+                          <li>On-spot registration is also allowed.</li>
+                          <li>This event consist of 2 rounds:
+                            <ul>
+                              <li>Quiz based on cricket</li>
+                              <li>The teams that clear the 1st round will be allowed to participate in the auction.</li>
+                            </ul>
+                          </li>
+                          <li>Each team will be provided with a base amount, which can be considered as the individual team budget. Teams will have to bid for players and buy them.</li>
+                          <li>AT ANY MOMENT OF THE GAME, Teams crossing the stipulated budget stand to be disqualified.</li>
+                          <li>Players are categorised. So by the end of the auction, the structure of the team should look like:
+                          <ul>
+                            <li>Minimum of 11 players</li>
+                            <li>6 Indian players and 5 foreign player
+                            <ul>
+                              <li>4-BATSMEN</li>
+                              <li>2-ALL-ROUNDER</li>
+                              <li>1-WICKETKEEPER</li>
+                              <li>4-Bowlers</li>
+                            </ul>
+                            </li>
+                          </ul>
+                          </li>
+                          <li>Teams not satisfying the mandatory structure as above will also be disqualified.</li>
+                          <li>The winning team will be decided based on the player’s rating and the maximum number of players.</li>
+                          <li>At the end of the auction some amount needs to be retained by the participants. </li>
+                        </ol>
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title">CRICBIDD </span>
+                      <div class="quotes">                <br />
+                               One team,one dream
+                        <br />                <br />DATE :- 20-09-19<br />                Level I  :10:45a.m. - 12noon  <br />    Level II : 1p.m. - 2p.m. <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">PRAMOD KUMAR K <br /> </span><div class="ph"> Mobile : +91 9884588492 </div></div>
+                      <div class="head"><span class="head-name">BHARATH M <br /> </span><div class="ph"> Mobile : +91 9787370398</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT SIX ENDS   -->
+
+        <!-- EVENT SEVEN -->
+                <div class="event event-7">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+
+                        <h1>BLITZ BRIGADE</h1>
+<h3>Shhh!! Surprise!!</h3>
+<p>Keep your eyes for a surprise. It’s still a magic even if you know how it’s done. Life is full of surprises, indeed!</p>
+<h3>RULES AND REGULATIONS:</h3>
+                        <ol>
+                          <li>Each team must consists of 2 members.</li>
+                        </ol>  
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> BLITZ BRIGADE!! </span>
+                      <div class="quotes">                <br />
+                        Keep your eyes for a surprise. It’s still a magic even if you know how it’s done. Life is full of surprises, indeed!
+                        <br />                <br />DATE :- 20-09-19<br />                Level I  :10a.m. - 12noon  <br />    Level II : 1p.m. - 2p.m. <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">MOGAN PRASAD K <br /> </span><div class="ph"> Mobile : +91 9566237353</div></div>
+                      <div class="head"><span class="head-name">SHIVANI S<br /> </span><div class="ph"> E-Mail : shivani.sankaran98@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT SEVEN ENDS   -->
+
+        <!-- EVENT EIGHT -->
+                <div class="event event-8">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+
+                        <h1>Shutter Snap</h1>
+                        <p>Walk. look. stop. Photograph!<br/>
+                          Took Too Long?<br/>
+                          Observe. Await. Astound.
+                        </p>
+                        <h3>Mail us</h3>
+                        <p>shuttersnap.synsara19@gmail.com</p>
+                        <h3>Theme</h3>
+                        <p>Capture Life</p>
+                          <h3>RULES AND REGULATIONS:</h3>
+                        <ol>
+                          <li>Mail your captures with subject as "Your Name" SYNSARA, enclosing the following details:
+                            <ul>
+                              <li>College name, Department name, Insta ID</li>
+                            </ul>
+                          </li>
+                          <li>Top photographers will be rewarded based on LIKES and Professional Judgements.</li>
+                           <li>The Last date for submitting your snaps is 12-10-2019.</li>
+                            <li>To know more about the contest - <a href="https://www.instagram.com/synsara_2k19/">Click Here</a> .</li>
+                        </ol>  
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title">Shutter Snap </span>
+                      <div class="quotes">                <br />
+                        Here's to your awe! The shutter space is open!
+                        <br />                <br />Online Event<br />                Instagram Account: synsara_2k19  <br />    E-mail: shuttersnap.synsara19@gmail.com <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">VISHNU PRASAD G <br /> </span><div class="ph"> Mobile : +91 9488028722</div></div>
+                      <div class="head"><span class="head-name">JANANI M <br /> </span><div class="ph"> E-Mail : jananijan1998@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT EIGHT ENDS   -->
+
+        
+
+        <!-- EVENT NINE -->
+                <div class="event event-9">
+                  <div class="event-image"></div>
+                    <div class="instruct">
+                      <img class="ins-close" src="img/back-arrow-button.png" />
+                        <h1>WORKSHOP!</h1>
+                        <p>To gain knowledge and have impeccable learning experience, Synsara 2k19, presents an opportunity for you to attend workshop organized by experienced professionals, who are best at what they do, along with their top-notch technology.</p>
+                        <h3>Further Details:</h3>
+                        <p>Yet to be announced.</p>
+                    </div>
+                    <!-- <img src="img/data1.jpg" class="e_image"> -->
+                  <!-- </div> -->
+                  <div class="info">
+                    <img class="info-close" src="img/x-button.png" />
+                      <div class="desc">
+                      <span class="event_title"> &nbsp; WORKSHOP! </span>
+                      <div class="quotes">                <br />
+                        The beginning of knowledge is the discovery of something we do not understand.
+                        <br />                <br />DATE :- 20-09-19<br />                Session-I  :10a.m. - 12noon  <br />    Session-II : 1p.m. - 3.30p.m. <br />
+                      </div>
+                      <div class="button">
+                        <div class="instruction">
+                          <input class="ins" value="INSTRUCTIONS" type="button" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="head_info"><div class="inf">For more Information: <br /><br /></div>
+                      <div class="head"><span class="head-name">RASHEETH KHAN M <br /> </span><div class="ph"> Mobile : +91 7397436586</div></div>
+                      <div class="head"><span class="head-name">HEMASHALINI S <br /> </span><div class="ph"> E-Mail : hshalusathya@gmail.com</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <!-- EVENT NINE ENDS   -->
+              </div>
+              <!-- <div class="arrow"> -->
+                <div class="leftarrow">
+                  <img src="img/left-arrow.png" width="40px" height="70px" />
+                </div>
+                <div class="rightarrow">
+                  <img src="img/right-arrow.png" width="40px" height="70px"/>
+                </div>
+              <!-- </div> -->
+            </div>
+
+          <div name="Register" class="register-container">
+            
+              <!-- <div class="map-line"></div> -->
+            <div class="black-overlay">
+              <!-- <div class="map-line"></div> -->
+              <div class="section-title member-detail" style="color: #000000;">Register<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
+              <!-- <center >
+                <h1 style="color: #000000;">Registrations will Close on 
+                  <span style="color:#FF5722;" >16<sup>th</sup> September</span>
+                </h1>
+              </center> -->
+              <div>
+                  <span class="next-year"></span>
+                  <!-- <br><br><br> -->
+                  <!-- <main>
+                      <div id="countdown">
+                          <div class="countdown-item years">0</div>
+                          <div class="countdown-item days">0</div>
+                          <div class="countdown-item hours">0</div>
+                          <div class="countdown-item minutes">0</div>
+                          <div class="countdown-item seconds">0</div>
+                      </div>
+                  </main></div> -->
+              <div class="register-info">
+              <h2 style="padding:0%"><a class="reg-button" href="hackathon/hackathon_index.html" >&nbsp  Register  for  Hack-Una-Matata  </a></h2>
+          <br>
+          <h2 style="padding:0%"><a  class="reg-button" href="form.php">Register for Other Events</a></h2>
+          <br>
+          <h2 style="padding:0%"><a  class="reg-button" href="night_sky/index.html" >  Register  for  Workshop  </a></h2>
+          <br><br> 
+			    </div> 
+        </div>
+          </div>
+
+       <div name="Team" class="team-container" >
+         <div class="black-overlay"style="background-color: #000000">
+            <!-- <div class="map-line"></div> -->
+            <div class="section-title member-detail" style="color: rgb(255, 255, 255);">Sponsors<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
+            <div class="container">
+              <div class="row">
+                <div class="add">
+                  <!-- <div class="three columns"><div class="member-photo"><img src="img/1.jpg" alt="President" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/devesh1234">Devesh Rastogi</a></span><br><span class="member-post">President</span></div>
+                  <div class="three columns"><div class="member-photo"><img src="img/2.jpg" alt="Vice President" width="100%"  /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/siddhaarth.sudhakarannellayil">Siddhaarth S</a></span><br><span class="member-post">Vice President</span></div> -->
+                </div>
+                <div class="add">
+                  
+        <!-- <center> -->
+            <!-- <div class="event-date">
+              <span>Yet To Announce...!</span>
+            </div>   -->
+          <!-- </center>   -->
+                  <!-- <div class="three columns"><div class="member-photo"><img src="img/3.jpg" alt="Secretary" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/shivani.kandavelu">Shivani K</a></span><br><span class="member-post">Secretary</span></div>
+                  <div class="three columns"><div class="member-photo"><img src="img/4.jpg" alt="Joint Secretary" width="100%"  /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/ashishere123">Aswin Kumar R</a></span><br><span class="member-post">Joint Secretary</span></div> -->
+                  <div class="twelve columns">
+                      <div class="member-post">
+                        
+                      <center>
+                          <!-- <div>
+                              <img src="img/announcement.gif" width=250px>
+                            </div> -->
+                            <div>
+                              <img src="img/SponsorLogos/manya_logo.jpg">
+                              <img src="img/SponsorLogos/ganit-logo.png">
+                          </div>
+                        <!-- <h1>
+                      <span>Yet To Announce...!</span> 
+                    </h1> -->
+                  </center>
+                </div> 
+                  </div>
+                </div>
+              </div>
+        <br>
+        <br>
+        <br>
+        <br>
+              <!--<div class="row">
+                <div class="add">
+                  <div class="three columns"><div class="member-photo"><img src="img/5.jpg" alt="Treasurer" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/vishal.ramaswamy.9">Vishal Ramaswamy</a></span><br><span class="member-post">Treasurer</span></div>
+                  <div class="three columns"><div class="member-photo"><img src="img/6.jpg" alt="Joint Treasurer" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/arvind.muthuraman">Arvind M</a></span><br><span class="member-post">Joint Treasurer</span></div>
+                </div>
+                <div class="add">
+                  <div class="three columns"><div class="member-photo"><img src="img/7.jpg" alt="Event Coordinator" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/ru.ban.908">Ruban B</a></span><br><span class="member-post">Event Coordinator</span></div>
+                  <div class="three columns"><div class="member-photo"><img src="img/8.jpg" alt="Event Coordinator" width="100%" /></div><span class="member-name"><a target="_blank" href="https://www.facebook.com/bharathsiva007">Bharath Kumar S</a></span><br><span class="member-post">Event Coordinator</span></div>
+                </div>
+              </div>-->
+
+              <!-- <div class="row">
+                <div class="six columns"><span class="member-name"><a target="_blank" href="https://www.facebook.com/davidbala777">David Bala A</a></span><br><span class="member-post">Associate Secretary</span></div>
+                <div class="six columns"><span class="member-name"><a target="_blank" href="https://www.facebook.com/SudarAbisheck.S">Sudar Abisheck S</a></span><br><span class="member-post">Associate Coordinator</span></div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+        <div name="Map" class="sairam-map">
+            <div class="map-line"></div>
+            <iframe  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Sri%20Sairam%20Engineering%20College%2c%20Sairam%20Campus%2C%20Sai%20Leo%20Nagar%2C%20West%20Tambaram%2c%20Chennai%2C%20Tamil%20Nadu%2c%20India&key=AIzaSyDb4b1Tl5GuvoZl7cCFpx_dT9_xJ9SamGM" allowfullscreen></iframe>
+            <div class="map-line"></div>
+            <!-- <div class="contact-us">
+              <div style="width:70%;"></div>
+              <div style="background:#00FF00; width:30%; padding: 20px;">
+                <b><span style="font-size: 1.2em">Contact Us:</span></b><br>
+                 Rasheeth Khan  : +91 9962463212<br>
+                 Sathish K: +91 9788987749<br>
+                 Ruban B         : +91 9094831059
+              </div>
+            </div> -->
+          </div>
+
+  <!-- FOOTER -->        
+  <div class="contact_synsara_container">
+              <div style="background-color: #00ff00" class="contact_synsara_col">
+                <b><span style="font-size: 1.2em">Contact Us:</span></b><br>
+                Rasheeth Khan  : <a href="tel:+917397436586" style="color: #000000;">7397436586</a><br>
+                Abinaya Babu:  <a href="tel:+917397264570" style="color: #000000;">9790760572</a><br>
+                Hema Shalini       :  <a href="tel:+919940160883" style="color: #000000;">8608881411</a><br>
+                 Abinaya V      :  <a href="tel:+919940160883" style="color: #000000;">9003164234</a><br>
+            </div>
+            <div style="background-color:black;color: #00ff00" class="contact_synsara_col">
+                <b><span style="font-size: 1.2em">Email:</span></b><br>
+                <a style="color:rgb(0, 255, 0)" href="mailto:synsara2k19@gmail.com">synsara2k19@gmail.com</a>
+            </div>
+            <div style="background-color: #00ff00" class="contact_synsara_col">
+                <b><span style="font-size: 1.2em">Address:</span></b><br><address>
+                  Sri Sairam Engineering College,<br>
+                  Sai Leo Nagar,West Tamabaram,<br>
+                  Chennai-44.
+                  </address>
+            </div>
+      </div>
+          <footer>
+            <div class="foot">
+              <!-- <div class="map-line"></div> -->
+              Copyright &copy; 2019 SYNSARA 2K19.<br/>
+              Wired By <a style="color:#f3f3f3" href="http://www.synsara2k19.in">Web Team SYNSARA</a>.
+            </div>
+          </footer>
+  <!-- FOOTER ENDS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <!--<script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="./js/index.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+             e.src='https://www.google-analytics.com/analytics.js';
+             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+    </body>
+</html>
